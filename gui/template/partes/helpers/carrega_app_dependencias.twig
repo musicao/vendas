@@ -1,0 +1,20 @@
+{# empty Twig template #}
+{% import 'partes/helpers/tags_script.twig' as loading %}
+{% set sani = 'angular/angular-sanitize.min.js' %}
+{% set paginate  = "angular/dirPagination.js" %}
+{% set filters = 'angular/ng-filters-br.min.js' %}
+{% set load = 'angular/loading-bar.js' %}
+{% set datejs = 'angular/date.js' %}
+{% set validate = 'angular/validate.min.js' %}
+{% set cpf = 'angular/cpf.js' %}
+{% set cnpj = 'angular/cnpj.js' %}
+{% set mask = 'angular/mask.js' %}
+{% set ngCpfCnpj = 'angular/ngCpfCnpj.js' %}
+{% set filter = 'angular/ng-filters-br.min.js' %}
+{% set uiRouter = 'angular/angular-ui-router.min.js' %}
+
+
+{% set js_s = [ sani,paginate,filters,load, datejs,validate,cpf,cnpj,mask,ngCpfCnpj,filter,uiRouter ] %}{{ loading.js_loading(js_s, js_dir, 'sincrono' ) }}
+
+
+ 

@@ -1,0 +1,5 @@
+{% import 'partes/helpers/tags_script.twig' as loading %}
+{% set app = '../../app/app.js' %}
+{% set js_s = [ app ] %}{{ loading.js_loading(js_s, js_dir, 'sincrono' ) }}
+
+ 

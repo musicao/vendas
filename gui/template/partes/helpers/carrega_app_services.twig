@@ -1,0 +1,5 @@
+{# empty Twig template #}
+{% import 'partes/helpers/tags_script.twig' as loading %}
+{% set logincontroller = '../../app/login/services/login.service.js' %}
+
+{% set js_s = [  logincontroller] %}{{ loading.js_loading(js_s, js_dir, 'sincrono' ) }}

@@ -1,0 +1,8 @@
+{# empty Twig template #}
+{% import 'partes/helpers/tags_script.twig' as loading %}
+{% set jquery_js = 'jquery.min.js' %}
+{#{% set moderna = 'modernizr.js' %}#}
+{% set toastr = 'toastr.min.js' %}
+{% set comum = 'script.js' %}
+
+{% set js_s = [ jquery_js ,toastr, comum ] %}{{ loading.js_loading(js_s, js_dir, 'sincrono' ) }}

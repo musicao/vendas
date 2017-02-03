@@ -1,0 +1,81 @@
+<header>
+
+        <div class="menu_bar">
+            <a href="/" class="bt-menu"><span><i class="list  icon"></i></span>
+                <img style=" height: 40px" class="ui circular image"  src="{% include 'partes/helpers/carrega_logo_pequeno.twig' %}">
+            </a>
+
+
+        </div>
+
+        <nav>
+            <ul>
+                <li> <a href="/"><img style=" height: 40px; display: inline" class="ui circular image"  src="{% include 'partes/helpers/carrega_logo_pequeno.twig' %}"></a></li>
+                <li> <a href="/processo/cadastrar"><i class="archive    icon"></i>Processos</a></li>
+                <li class="submenu">
+                    <a href="#"><i class="cubes icon" aria-hidden="true"></i>
+                        Grupos<span><i class="dropdown icon caret"></i></span></a>
+                    <ul class="children">
+                        <li><a href="/grupo/cadastrar">Cadastrar</a></li>
+                        <li><a href="/grupo">Listar</a></li>
+
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#"><i class="users icon" aria-hidden="true"></i>
+                        Usuários<span><i class="dropdown icon caret"></i></span></a>
+                    <ul class="children">
+                        <li><a href="/usuario/cadastrar">Cadastrar</a></li>
+                        <li><a href="/usuario">Listar</a></li>
+
+                    </ul>
+                </li>
+                <li> <a href="/#"><i class=" search icon"></i>Pesquisar</a></li>
+                <li class="submenu">
+                    <a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                            Relatórios<span><i class="dropdown icon caret"></i></span></a>
+                    <ul class="children">
+                        <li><a href="/#">Relatorio 1</a></li>
+                        <li><a href="/#">Relatorio 2</a></li>
+                        <li><a ref="/#">Relatorio 3</a></li>
+                    </ul>
+                </li>
+
+                <li> <a href="/desloga"> <span class="ui teal button"><i class="sign out icon"></i> Sair</span></a></li>
+
+
+            </ul>
+
+        </nav>
+    </header>
+
+<div class="conteudoAposnav">
+<div class="ui stackable three column grid ">
+        <div class="column"></div>
+    <div class="column"></div>
+    <div class="column left aligned left">
+        <div class="ui horizontal list">
+            <div class="item">
+                {% if usuario_tipo_id ==  1 %}
+                    
+                    <i class="user  icon circular green inverted"> </i>
+                {% elseif usuario_tipo_id ==  3 %}
+                    
+                    <i class="user  icon circular yellow inverted"> </i>
+                {% else %}
+                    
+                    <i class="user  icon circular blue inverted"> </i>
+                {% endif %}
+
+                <div class="content">
+                    <div class="ui sub header">{{ usuario_nome }}</div>
+                    {{ usuario_perfil }}
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+    <br/>

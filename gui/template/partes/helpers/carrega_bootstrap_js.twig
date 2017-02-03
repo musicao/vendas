@@ -1,0 +1,6 @@
+{# empty Twig template #}
+{% import 'partes/helpers/tags_script.twig' as loading %}
+{% set bootstrapjs = 'bootstrap.min.js' %}
+
+
+{% set js_s = [ bootstrapjs ] %}{{ loading.js_loading(js_s, js_dir, 'sincrono' ) }}

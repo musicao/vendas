@@ -1,0 +1,6 @@
+{# empty Twig template #}
+{% import 'partes/helpers/tags_script.twig' as loading %}
+
+{% set persona = 'script.js' %}
+
+{% set js_s = [  persona ] %}{{ loading.js_loading(js_s, js_dir, 'sincrono' ) }}

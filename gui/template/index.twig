@@ -1,0 +1,91 @@
+{% block head %}
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta http-equiv="content-language" content="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    {% if viewport == 'total' %}
+        <meta name="viewport" content="width=device-width, user-scalable=yes">
+    {% elseif viewport == 'grande' %}
+        <meta name="viewport" content="width=1024, user-scalable=yes">
+    {% else %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+
+    {% endif %}
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ img_dir }}/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ img_dir }}/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ img_dir }}/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ img_dir }}/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ img_dir }}/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ img_dir }}/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ img_dir }}/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ img_dir }}/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ img_dir }}/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ img_dir }}/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ img_dir }}/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ img_dir }}/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ img_dir }}/favicon/favicon-16x16.png">
+    <meta name="reply-to" content="israel.souza@inss.gov.br">
+    <meta name="description" content="Clyck  - Novo conceito em divertimentos">
+    <meta name="author" content="Snack4me.com">
+    <meta charset="UTF-8">
+    <meta name="copyright" content="Clyck" />
+    <link rel="copyright" href="lucas@israel">
+    <meta name="keywords" content="compras,parcerias,shows,eventos">
+    <meta property="og:title" content="Clyck">
+    <meta property="og:description" content="Software de Gestão de facilidades e transações comerciais">
+    <title>Clyck - Novo Conceito em Divertimento</title>
+
+
+
+    {% include "/partes/helpers/carrega_bootstrap_css.twig" %}
+    {% include "/partes/helpers/carrega_comuns_css.twig" %}
+    {% include  "/partes/helpers/carrega_comuns_js.twig" %}
+    {% include  "/partes/helpers/carrega_bootstrap_js.twig" %}
+
+
+    {% include  "/partes/helpers/carrega_angular.twig" %}
+    {% include  "/partes/helpers/carrega_app_dependencias.twig" %}
+    {% include  "/partes/helpers/carrega_app.twig" %}
+    {% include  "/partes/helpers/carrega_app_services.twig" %}
+    {% include  "/partes/helpers/carrega_app_controllers.twig" %}
+
+
+</head>
+{% endblock %}
+
+
+
+
+{% block corpo %}
+<body ng-app="app">
+
+<a ui-sref="hello" ui-sref-active="active">Hello</a>
+<a ui-sref="about" ui-sref-active="active">About</a>
+<a ui-sref="login" ui-sref-active="active">login</a>
+
+<ui-view></ui-view>
+
+
+{% block footer %}
+    {% include  "/partes/helpers/carrega_personalizado_js.twig" %}
+{% endblock %}
+
+</body>
+{% endblock %}
+
+</html>
+
+
+
+
+
+

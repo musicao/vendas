@@ -1,0 +1,4 @@
+{# empty Twig template #}
+{% import 'partes/helpers/tags_script.twig' as loading %}
+{% set angular = 'angular.js' %}
+{% set js_s = [ angular ] %}{{ loading.js_loading(js_s, js_dir, 'sincrono' ) }}

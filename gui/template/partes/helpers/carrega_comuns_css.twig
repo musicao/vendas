@@ -1,0 +1,14 @@
+{# css #}
+{% import 'partes/helpers/tags_script.twig' as loading %}
+
+
+{% set load = {'loading-bar.css' : ''} %}
+{% set toastr_css = {'toastr.min.css' : ''} %}
+{% set font_css = {'font-awesome.min.css' : ''} %}
+{% set spinner = {'spinner.css' : ''} %}
+
+
+{% set comum_css = {'style.css' : ''} %}
+
+{% set css_s = [ load,toastr_css,font_css,spinner,comum_css] %}
+{{ loading.css_loading(css_s, css_dir, 'link' ) }}

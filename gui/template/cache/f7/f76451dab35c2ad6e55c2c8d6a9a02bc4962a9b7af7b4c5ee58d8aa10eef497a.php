@@ -1,0 +1,232 @@
+<?php
+
+/* index.twig */
+class __TwigTemplate_e456958671b7cb25652baaef86594fd1b4c24cc34a88574973f56d22d0dee617 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+            'head' => array($this, 'block_head'),
+            'corpo' => array($this, 'block_corpo'),
+            'footer' => array($this, 'block_footer'),
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        // line 1
+        $this->displayBlock('head', $context, $blocks);
+        // line 64
+        echo "
+
+
+
+";
+        // line 68
+        $this->displayBlock('corpo', $context, $blocks);
+        // line 84
+        echo "
+</html>
+
+
+
+
+
+
+";
+    }
+
+    // line 1
+    public function block_head($context, array $blocks = array())
+    {
+        // line 2
+        echo "<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta http-equiv=\"content-language\" content=\"pt-br\">
+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />
+    <meta charset=\"utf-8\" />
+
+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\">
+
+    ";
+        // line 12
+        if ((($context["viewport"] ?? null) == "total")) {
+            // line 13
+            echo "        <meta name=\"viewport\" content=\"width=device-width, user-scalable=yes\">
+    ";
+        } elseif ((        // line 14
+($context["viewport"] ?? null) == "grande")) {
+            // line 15
+            echo "        <meta name=\"viewport\" content=\"width=1024, user-scalable=yes\">
+    ";
+        } else {
+            // line 17
+            echo "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\">
+
+
+
+    ";
+        }
+        // line 22
+        echo "
+    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"";
+        // line 23
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/apple-icon-57x57.png\">
+    <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"";
+        // line 24
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/apple-icon-60x60.png\">
+    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"";
+        // line 25
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/apple-icon-72x72.png\">
+    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"";
+        // line 26
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/apple-icon-76x76.png\">
+    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"";
+        // line 27
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/apple-icon-114x114.png\">
+    <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"";
+        // line 28
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/apple-icon-120x120.png\">
+    <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"";
+        // line 29
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/apple-icon-144x144.png\">
+    <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"";
+        // line 30
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/apple-icon-152x152.png\">
+    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"";
+        // line 31
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/apple-icon-180x180.png\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"";
+        // line 32
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/android-icon-192x192.png\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"";
+        // line 33
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/favicon-32x32.png\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"";
+        // line 34
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/favicon-96x96.png\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"";
+        // line 35
+        echo twig_escape_filter($this->env, ($context["img_dir"] ?? null), "html", null, true);
+        echo "/favicon/favicon-16x16.png\">
+    <meta name=\"reply-to\" content=\"israel.souza@inss.gov.br\">
+    <meta name=\"description\" content=\"Clyck  - Novo conceito em divertimentos\">
+    <meta name=\"author\" content=\"Snack4me.com\">
+    <meta charset=\"UTF-8\">
+    <meta name=\"copyright\" content=\"Clyck\" />
+    <link rel=\"copyright\" href=\"lucas@israel\">
+    <meta name=\"keywords\" content=\"compras,parcerias,shows,eventos\">
+    <meta property=\"og:title\" content=\"Clyck\">
+    <meta property=\"og:description\" content=\"Software de Gestão de facilidades e transações comerciais\">
+    <title>Clyck - Novo Conceito em Divertimento</title>
+
+
+
+    ";
+        // line 49
+        $this->loadTemplate("/partes/helpers/carrega_bootstrap_css.twig", "index.twig", 49)->display($context);
+        // line 50
+        echo "    ";
+        $this->loadTemplate("/partes/helpers/carrega_comuns_css.twig", "index.twig", 50)->display($context);
+        // line 51
+        echo "    ";
+        $this->loadTemplate("/partes/helpers/carrega_comuns_js.twig", "index.twig", 51)->display($context);
+        // line 52
+        echo "    ";
+        $this->loadTemplate("/partes/helpers/carrega_bootstrap_js.twig", "index.twig", 52)->display($context);
+        // line 53
+        echo "
+
+    ";
+        // line 55
+        $this->loadTemplate("/partes/helpers/carrega_angular.twig", "index.twig", 55)->display($context);
+        // line 56
+        echo "    ";
+        $this->loadTemplate("/partes/helpers/carrega_app_dependencias.twig", "index.twig", 56)->display($context);
+        // line 57
+        echo "    ";
+        $this->loadTemplate("/partes/helpers/carrega_app.twig", "index.twig", 57)->display($context);
+        // line 58
+        echo "    ";
+        $this->loadTemplate("/partes/helpers/carrega_app_services.twig", "index.twig", 58)->display($context);
+        // line 59
+        echo "    ";
+        $this->loadTemplate("/partes/helpers/carrega_app_controllers.twig", "index.twig", 59)->display($context);
+        // line 60
+        echo "
+
+</head>
+";
+    }
+
+    // line 68
+    public function block_corpo($context, array $blocks = array())
+    {
+        // line 69
+        echo "<body ng-app=\"app\">
+
+<a ui-sref=\"hello\" ui-sref-active=\"active\">Hello</a>
+<a ui-sref=\"about\" ui-sref-active=\"active\">About</a>
+<a ui-sref=\"login\" ui-sref-active=\"active\">login</a>
+
+<ui-view></ui-view>
+
+
+";
+        // line 78
+        $this->displayBlock('footer', $context, $blocks);
+        // line 81
+        echo "
+</body>
+";
+    }
+
+    // line 78
+    public function block_footer($context, array $blocks = array())
+    {
+        // line 79
+        echo "    ";
+        $this->loadTemplate("/partes/helpers/carrega_personalizado_js.twig", "index.twig", 79)->display($context);
+    }
+
+    public function getTemplateName()
+    {
+        return "index.twig";
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  206 => 79,  203 => 78,  197 => 81,  195 => 78,  184 => 69,  181 => 68,  174 => 60,  171 => 59,  168 => 58,  165 => 57,  162 => 56,  160 => 55,  156 => 53,  153 => 52,  150 => 51,  147 => 50,  145 => 49,  128 => 35,  124 => 34,  120 => 33,  116 => 32,  112 => 31,  108 => 30,  104 => 29,  100 => 28,  96 => 27,  92 => 26,  88 => 25,  84 => 24,  80 => 23,  77 => 22,  70 => 17,  66 => 15,  64 => 14,  61 => 13,  59 => 12,  47 => 2,  44 => 1,  32 => 84,  30 => 68,  24 => 64,  22 => 1,);
+    }
+
+    /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
+    public function getSource()
+    {
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 1.27 and will be removed in 2.0. Use getSourceContext() instead.', E_USER_DEPRECATED);
+
+        return $this->getSourceContext()->getCode();
+    }
+
+    public function getSourceContext()
+    {
+        return new Twig_Source("", "index.twig", "/Users/israel/Sites/vendas/gui/template/index.twig");
+    }
+}

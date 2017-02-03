@@ -1,0 +1,30 @@
+{# empty Twig template #}
+{% macro css_loading(lista, css_dir, tipo) %}
+{% if tipo|default('link') == 'link' %}
+{% for nome in lista %}
+{% for endereco,media in nome %}
+<link href="{{ css_dir }}/{{ endereco }}" type="text/css" rel="stylesheet" {% if media|default('')|length >= 2 %}media="{{ media }}"{% endif %}/>
+{% endfor %}
+{% endfor %}
+{% else %}
+<style>
+{% for nome in lista %}
+{% for endereco,media in nome %}
+@import url("{{ css_dir }}/{{ endereco }}"){% if media|default('')|length >= 2 %} {{ media }}{% endif %};
+{% endfor %}
+{% endfor %}
+</style>
+{% endif %}
+{% endmacro %}
+
+{% macro js_loading(nome, js_dir, tipo) %}
+{% if tipo|default('sincrono') == 'sincrono' %}
+{% for nome_util in nome %}
+<script type='text/javascript' src="{{ js_dir }}/{{ nome_util }}" ></script>
+{% endfor %}
+{% else %}        
+{% for nome_util in nome %}
+<script type='text/javascript' src="{{ js_dir }}/{{ nome_util }}" async="async" ></script>
+{% endfor %}
+{% endif %}
+{% endmacro %}
