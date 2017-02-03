@@ -7,4 +7,5 @@ vendor/**
 .idea/*
 node_modules/
 node_modules/**
-
+template/cache/
+template/cache/**
