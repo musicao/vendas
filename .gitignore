@@ -1,0 +1,10 @@
+.DS_Store
+assets/
+composer.lock
+vendor/
+vendor/**
+.idea
+.idea/*
+node_modules/
+node_modules/**
+
