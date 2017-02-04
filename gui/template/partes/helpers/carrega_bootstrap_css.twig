@@ -1,4 +1,6 @@
 {# css #}
 {% import 'partes/helpers/tags_script.twig' as loading %}
-{% set css_s = [ 'bootstrap.min.css'] %}
-{{ loading.css_loading(css_s, css_dir, 'link' ) }}
+
+{% set cs = {'bootstrap.min.css' : ''} %}
+
+{{ loading.css_loading(cs, css_dir, 'link' ) }}
