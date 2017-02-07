@@ -54,6 +54,6 @@ class __TwigTemplate_fced731b571e819eaaa1cc92f205de3586bdf877d6dd9ff1dd20b24ff7c
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "/partes/helpers/carrega_app_services.twig", "/Users/israel/Sites/vendas/gui/template/partes/helpers/carrega_app_services.twig");
+        return new Twig_Source("", "/partes/helpers/carrega_app_services.twig", "/Users/israel/Sites/lucas/clyck/gui/template/partes/helpers/carrega_app_services.twig");
     }
 }

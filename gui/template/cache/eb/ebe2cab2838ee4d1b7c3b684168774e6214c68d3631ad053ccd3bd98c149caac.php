@@ -15,13 +15,26 @@ class __TwigTemplate_261608b1fe0da7590c44c6593c5a55bfffd019c1596e4eec55a34b38dc1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+        // line 1
+        $context["loading"] = $this->loadTemplate("partes/helpers/tags_script.twig", "/partes/helpers/carrega_bootstrap_css.twig", 1);
         // line 2
-        $context["loading"] = $this->loadTemplate("partes/helpers/tags_script.twig", "/partes/helpers/carrega_bootstrap_css.twig", 2);
-        // line 3
-        $context["css_s"] = array(0 => "bootstrap.min.css");
+        echo "
+
+";
         // line 4
+        $context["booots"] = array("bootstrap.min.css" => "");
+        // line 5
+        echo "
+
+";
+        // line 7
+        $context["css_s"] = array(0 => ($context["booots"] ?? null));
+        // line 8
         echo $context["loading"]->getcss_loading(($context["css_s"] ?? null), ($context["css_dir"] ?? null), "link");
         echo "
+
+
+
 ";
     }
 
@@ -37,7 +50,7 @@ class __TwigTemplate_261608b1fe0da7590c44c6593c5a55bfffd019c1596e4eec55a34b38dc1
 
     public function getDebugInfo()
     {
-        return array (  23 => 4,  21 => 3,  19 => 2,);
+        return array (  33 => 8,  31 => 7,  27 => 5,  25 => 4,  21 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -50,6 +63,6 @@ class __TwigTemplate_261608b1fe0da7590c44c6593c5a55bfffd019c1596e4eec55a34b38dc1
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "/partes/helpers/carrega_bootstrap_css.twig", "/Users/israel/Sites/vendas/gui/template/partes/helpers/carrega_bootstrap_css.twig");
+        return new Twig_Source("", "/partes/helpers/carrega_bootstrap_css.twig", "/Users/israel/Sites/lucas/clyck/gui/template/partes/helpers/carrega_bootstrap_css.twig");
     }
 }

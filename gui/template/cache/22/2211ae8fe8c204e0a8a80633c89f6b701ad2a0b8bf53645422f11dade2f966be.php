@@ -203,6 +203,6 @@ class __TwigTemplate_8dd70e61cb463c4d536fdac954ec4f0aa73f58f844aa5d347874147b9d4
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "partes/helpers/tags_script.twig", "/Users/israel/Sites/vendas/gui/template/partes/helpers/tags_script.twig");
+        return new Twig_Source("", "partes/helpers/tags_script.twig", "/Users/israel/Sites/lucas/clyck/gui/template/partes/helpers/tags_script.twig");
     }
 }

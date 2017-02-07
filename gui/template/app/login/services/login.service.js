@@ -12,15 +12,18 @@
 
         return {
 
-            postDatasUsers: function () {
+
+                postLogar: function (login, password) {
 
                 var deferred = $q.defer();
 
                 $http({
-                    method: 'GET',
-                    url: "/lucas" ,
+                    method: 'post',
+                    url: "/login/logar" ,
                     timeout: 10000,
                     data: {
+                        login: login,
+                        password: password
 
                     }
                 })

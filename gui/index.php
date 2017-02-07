@@ -79,37 +79,14 @@ $app->get('/', function()use($twig,$app){
 	
 });
 
-
-$app->get('/lucas', function()use($twig,$app){
-	
-	$data['data'] = 'macaco';
-	$retorno = new Response(json_encode($data));
-	$retorno->headers->set('Content-Type','application/json; charset=utf-8');
-	return $retorno;
-	
-});
+ 
 
 
 $app->before(function($app) use ($twig){
-	/*$usessao = Eglobal::getStance()->getSessao();
-	
-	if(!$usessao->logado )
-	{
-		if(!strpos($app->getRequestUri(),'login')) { return new RedirectResponse('/login'); }
-	}
-	
-	
-	
-	$twig->addGlobal('usuario_nome',$usessao->usuario_nome );
-	$twig->addGlobal('usuario_perfil',$usessao->usuario_perfil);
-	$twig->addGlobal('usuario_matricula',$usessao->usuario_matricula);
-	$twig->addGlobal('usuario_tipo_id',$usessao->usuario_tipo_id );
-	$usessao->aclMaster = array("1","2");
-	
+	$usessao = Eglobal::getStance()->getSessao();
+	  
 	$usessao->sistema_local = 'sistema_local';
-	*/
-	
-	
+	 
 });
 
 

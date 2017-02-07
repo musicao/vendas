@@ -79,6 +79,6 @@ class __TwigTemplate_1b6b3fd64e64589c93dd00a2d3960df69ec9a4e83c3a2b3f69409d17791
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "/partes/helpers/carrega_app_dependencias.twig", "/Users/israel/Sites/vendas/gui/template/partes/helpers/carrega_app_dependencias.twig");
+        return new Twig_Source("", "/partes/helpers/carrega_app_dependencias.twig", "/Users/israel/Sites/lucas/clyck/gui/template/partes/helpers/carrega_app_dependencias.twig");
     }
 }

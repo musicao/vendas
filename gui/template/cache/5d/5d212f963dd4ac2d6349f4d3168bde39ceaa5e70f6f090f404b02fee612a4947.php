@@ -71,6 +71,6 @@ class __TwigTemplate_16f146354c68bee77f02c521f7615b8de871b14a6115d2bb854fb958d95
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "/partes/helpers/carrega_comuns_css.twig", "/Users/israel/Sites/vendas/gui/template/partes/helpers/carrega_comuns_css.twig");
+        return new Twig_Source("", "/partes/helpers/carrega_comuns_css.twig", "/Users/israel/Sites/lucas/clyck/gui/template/partes/helpers/carrega_comuns_css.twig");
     }
 }

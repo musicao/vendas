@@ -8,21 +8,13 @@
             $interpolateProvider.startSymbol('%%');
             $interpolateProvider.endSymbol('%%');
 
-            var helloState = {
-                name: 'hello',
-                url: '/hello',
-                template: '<h3>hello world!</h3>'
-            }
 
-            var aboutState = {
-                name: 'about',
-                url: '/about',
-                template: '<h3>Its the UI-Router hello world app!</h3>'
-            }
 
             var login = {
                 name: 'login',
                 url: '/login',
+                controllers: 'LoginController',
+                controllerAs: 'vm',
                 views:{
                     '@': {
                         templateUrl:'template/app/login/views/login.html'
@@ -30,9 +22,23 @@
                 }
             }
 
-            $stateProvider.state(helloState);
-            $stateProvider.state(aboutState);
+            var registrar = {
+                name: 'registrar',
+                url: '/registrar',
+                controllers: 'LoginController',
+                controllerAs: 'vm',
+                views:{
+                    '@': {
+                        templateUrl:'template/app/login/views/registrar.html'
+                    }
+                }
+            }
+
+
             $stateProvider.state(login);
+            $stateProvider.state(registrar);
+
+
 
 
         }]);

@@ -10,29 +10,25 @@
     function LoginController( LoginService) {
         var vm = this;
 
-        vm.frase = 'lucas é um ';
-        vm.getDadosUsuarios = function() {
 
-            LoginService.postDatasUsers()
+        vm.logar = function () {
+
+            LoginService.postLogar(vm.login,vm.password)
                 .then(function (data) {
 
                     if (data.error) {
-
+                        toastr.error(data.message, 'Clyck Login', {timeOut: 4000});
                     } else if (data == "timeout"){
-
+                        toastr.warning("Sistema apresentando lentidão", 'Login', {timeOut: 4000});
                     }else{
-                        vm.nome  = data.data;
 
-
+                        toastr.success(data.message, 'Click Login', {timeOut: 4000});
                     }
 
 
-
                 });
-        };
 
-        vm.getDadosUsuarios();
-
+        }
     }
 
 })();

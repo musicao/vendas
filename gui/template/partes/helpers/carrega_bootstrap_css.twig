@@ -1,4 +1,11 @@
-{# css #}
 {% import 'partes/helpers/tags_script.twig' as loading %}
-{% set css_s = [ 'bootstrap.min.css'] %}
+
+
+{% set booots = {'bootstrap.min.css' : ''} %}
+
+
+{% set css_s = [ booots] %}
 {{ loading.css_loading(css_s, css_dir, 'link' ) }}
+
+
+
